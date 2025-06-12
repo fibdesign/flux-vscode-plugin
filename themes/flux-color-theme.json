@@ -1,0 +1,115 @@
+{
+  "colors": {
+    "editor.background": "#1F1F28",
+    "editor.foreground": "#D4D4D4"
+  },
+  "tokenColors": [
+    {
+      "scope": [
+        "keyword.control.flux"
+      ],
+      "settings": {
+        "foreground": "#bd97fc" // if، else، etc
+      }
+    },
+    {
+      "scope": [
+        "storage.type.flux"
+      ],
+      "settings": {
+        "foreground": "#a1d5ff" // sting,int,obect, etc
+      }
+    },
+    {
+      "scope": [
+        "constant.language.boolean.flux"
+      ],
+      "settings": {
+        "foreground": "#dfa64b" // true,false
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric.flux"
+      ],
+      "settings": {
+        "foreground": "#dfa64b" // numbers
+      }
+    },
+    {
+      "scope": [
+        "string.quoted.single.flux",
+        "string.template.flux"
+      ],
+      "settings": {
+        "foreground": "#a0d178" // string texts
+      }
+    },
+    {
+      "scope": [
+        "comment.block.flux"
+      ],
+      "settings": {
+        "foreground": "#6E738D", // comments
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "variable.other.flux"
+      ],
+      "settings": {
+        "foreground": "#DDDDDD" // variables
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function.flux"
+      ],
+      "settings": {
+        "foreground": "#C0B283"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.parameters.flux"
+      ],
+      "settings": {
+        "foreground": "#999999"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.flux"
+      ],
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+    {
+      "scope": [
+        "meta.brace.round.flux",
+        "meta.brace.curly.flux"
+      ],
+      "settings": {
+        "foreground": "#888888"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.type.flux"
+      ],
+      "settings": {
+        "foreground": "#87A987"
+      }
+    },
+    {
+      "scope": [
+        "support.type.method.flux"
+      ],
+      "settings": {
+        "foreground": "#B5938D"
+      }
+    }
+  ]
+}

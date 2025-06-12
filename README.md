@@ -1,65 +1,49 @@
-# flux README
+# Flux Language Extension for VSCode
 
-This is the README for your extension "flux". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+This extension provides basic support for the **Flux** programming language in Visual Studio Code.
 
 ---
 
-## Working with Markdown
+## Features
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+- Syntax highlighting for Flux language
+- Highlights keywords, data types, functions, and language constructs
+- Custom color theme inspired by TypeScript
+- Support for `.flux` file extension
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+---
 
-## For more information
+## Installation and Usage
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+1. Package the extension using `vsce package` (or use a published version).
+2. Install the extension in VSCode via:  
+   `Extensions` > `Install from VSIX...` and select the packaged `.vsix` file.
+3. Open or create a file with `.flux` extension.
+4. Enjoy syntax highlighting and language support for Flux!
 
-**Enjoy!**
+---
+
+## Roadmap
+
+- Complete grammar and cover all language syntax
+- Add code snippets and autocompletion
+- Support linting and error diagnostics
+- Publish publicly on the VSCode Marketplace
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**Author:** FibDesign
+**Email:** info@fibdesign.ir  
+**Repository:** https://github.com/fibdesign/flux-vscode-plugin.git

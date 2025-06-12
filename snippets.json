@@ -1,0 +1,29 @@
+{
+  "Function Definition": {
+    "prefix": "fn",
+    "body": [
+      "fn ${1:functionName}(${2}) => ${3:void} {",
+      "    $0",
+      "}"
+    ],
+    "description": "Define a function"
+  },
+  "Function Router Definition": {
+    "prefix": "fnr",
+    "body": [
+      "fn ${1:functionName}(${2:req:fluxReq}) => ${3:void} {",
+      "    $0",
+      "}"
+    ],
+    "description": "Define a function"
+  },
+  "Router Definition": {
+    "prefix": "router",
+    "body": [
+      "router '${1:/}' =>  {",
+      "    ${2:GET|POST|PUT|DELETE} '${3:/}' => ${4:homeView},",
+      "}"
+    ],
+    "description": "Define a router"
+  }
+}

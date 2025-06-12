@@ -9,17 +9,46 @@
   "categories": [
     "Programming Languages"
   ],
+  "scripts": {
+    "build": "vsce package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fibdesign/flux-vscode-plugin.git"
+  },
   "contributes": {
-    "languages": [{
-      "id": "flux",
-      "aliases": ["Flux", "flux"],
-      "extensions": [".flux"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "flux",
-      "scopeName": "source.flux",
-      "path": "./syntaxes/flux.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "flux",
+        "aliases": [
+          "Flux",
+          "flux"
+        ],
+        "extensions": [
+          ".flux"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "flux",
+        "scopeName": "source.flux",
+        "path": "./syntaxes/flux.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "flux",
+        "path": "./snippets.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Flux Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/flux-color-theme.json"
+      }
+    ]
   }
 }
