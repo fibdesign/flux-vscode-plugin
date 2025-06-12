@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Flux",
+  "scopeName": "source.flux",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#types" },
+    { "include": "#methods" },
+    { "include": "#literals" },
+    { "include": "#strings" },
+    { "include": "#comments" },
+    { "include": "#punctuation" },
+    { "include": "#identifiers" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [{
+        "name": "keyword.control.flux",
+        "match": "\\b(router|fn|return|const|as|emit)\\b"
+      }]
+    },
+    "types": {
+      "patterns": [{
+        "name": "storage.type.flux",
+        "match": "\\b(string|int|bool|void|fluxReq|object)\\b"
+      }]
+    },
+    "methods": {
+      "patterns": [{
+        "name": "keyword.operator.method.flux",
+        "match": "\\b(GET|POST|PUT|DELETE|PATCH|HEAD|OPTIONS)\\b"
+      }]
+    },
+    "literals": {
+      "patterns": [
+        { "name": "constant.numeric.flux", "match": "\\b\\d+\\b" },
+        { "name": "constant.language.boolean.flux", "match": "\\b(true|false)\\b" }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.single.flux",
+          "begin": "'",
+          "end": "'",
+          "patterns": [{ "match": "\\\\.", "name": "constant.character.escape.flux" }]
+        },
+        {
+          "name": "string.template.flux",
+          "begin": "`",
+          "end": "`",
+          "patterns": [{ "match": "\\\\.", "name": "constant.character.escape.flux" }]
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [{
+        "name": "comment.block.flux",
+        "begin": "#--",
+        "end": "--#"
+      }]
+    },
+    "punctuation": {
+      "patterns": [{
+        "name": "punctuation.flux",
+        "match": "[{}()\\[\\];:,=>.+\\-*/=]"
+      }]
+    },
+    "identifiers": {
+      "patterns": [{
+        "name": "variable.other.flux",
+        "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+      }]
+    }
+  }
+}
