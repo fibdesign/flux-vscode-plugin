@@ -8,7 +8,6 @@ This extension provides basic support for the **Flux** programming language in V
 
 - Syntax highlighting for Flux language
 - Highlights keywords, data types, functions, and language constructs
-- Custom color theme inspired by TypeScript
 - Support for `.flux` file extension
 
 ---
@@ -47,3 +46,7 @@ This project is licensed under the MIT License.
 **Author:** FibDesign
 **Email:** info@fibdesign.ir  
 **Repository:** https://github.com/fibdesign/flux-vscode-plugin.git
+
+```json
+sth
+```

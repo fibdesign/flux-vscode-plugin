@@ -3,6 +3,7 @@
   "displayName": "flux",
   "description": "word highlighting",
   "version": "0.0.1",
+  "publisher": "FibDesign",
   "engines": {
     "vscode": "^1.101.0"
   },

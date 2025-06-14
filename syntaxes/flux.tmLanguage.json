@@ -14,10 +14,16 @@
   ],
   "repository": {
     "keywords": {
-      "patterns": [{
-        "name": "keyword.control.flux",
-        "match": "\\b(router|fn|return|const|as|emit)\\b"
-      }]
+      "patterns": [
+        {
+          "name": "keyword.control.flux",
+          "match": "\\b(return|const|as|emit|fn)\\b"
+        },
+        {
+          "name": "keyword.control.fn.flux",
+          "match": "\\b(router)\\b"
+        }
+      ]
     },
     "types": {
       "patterns": [{
@@ -57,7 +63,13 @@
       "patterns": [{
         "name": "comment.block.flux",
         "begin": "#--",
-        "end": "--#"
+        "end": "--#",
+         "patterns": [
+        {
+          "name": "comment.todo.flux",
+          "match": "\\bTODO:\\b|\\bTODO\\b:?"
+        }
+      ]
       }]
     },
     "punctuation": {
@@ -67,10 +79,16 @@
       }]
     },
     "identifiers": {
-      "patterns": [{
-        "name": "variable.other.flux",
-        "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
-      }]
+      "patterns": [
+        {
+          "name": "keyword.control.fn.flux",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\()"
+        },
+        {
+          "name": "variable.other.flux",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
     }
   }
 }
